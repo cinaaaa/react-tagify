@@ -50,7 +50,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                         <TempSpan
                                             text={text}
                                             color={colors}
-                                            hashtagClicked={tagClicked}
+                                            tagClicked={tagClicked}
                                             key={Math.floor(Math.random() * 9999999)}
                                         />
                                     );
