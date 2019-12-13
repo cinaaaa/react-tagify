@@ -1,12 +1,12 @@
 {
     "name": "react-tagify",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "📌 Say Welcome to Hashtags and Mentions To You'r React App",
     "main": "./lib/ReactTagify.js",
     "author": "Sina Farhadi",
     "license": "MIT",
     "scripts": {
-        "build": "webpack",
+        "build": "webpack"
     },
     "repository": {
         "type": "git",
