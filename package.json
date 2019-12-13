@@ -1,12 +1,12 @@
 {
     "name": "react-tagify",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "📌 Say Welcome to Hashtags and Mentions To You'r React App",
     "main": "./lib/ReactTagify.js",
     "author": "Sina Farhadi",
     "license": "MIT",
     "scripts": {
-        "build": "webpack"
+        "build": "webpack",
     },
     "repository": {
         "type": "git",
@@ -21,10 +21,8 @@
         "tag-highlight",
         "mention-highlight"
     ],
-    "author": "Sina Farhadi",
-    "license": "MIT",
     "bugs": {
-    "url": "https://github.com/E-RROR/react-tagify/issues"
+        "url": "https://github.com/E-RROR/react-tagify/issues"
     },
     "homepage": "https://github.com/E-RROR/react-tagify#readme",
     "peerDependencies": {
@@ -33,6 +31,7 @@
         "react-dom": "^16.12.0"
     },
     "devDependencies": {
+        "@types/jest": "^24.0.23",
         "babel-core": "^6.21.0",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.6.1",
@@ -42,6 +41,7 @@
         "prop-types": "^15.7.2",
         "react": "^16.8.0",
         "react-dom": "^16.8.0",
+        "react-test-renderer": "^16.12.0",
         "webpack": "^4.5.0",
         "webpack-cli": "^3.2.1"
     }
