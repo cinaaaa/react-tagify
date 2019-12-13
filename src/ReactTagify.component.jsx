@@ -16,7 +16,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                 }}
                 onClick={() => {
                     if (props.tagClicked) {
-                        props.tagClicked(props.text.substr(1));
+                        props.tagClicked(props.text);
                     }
                     else {
                         //
