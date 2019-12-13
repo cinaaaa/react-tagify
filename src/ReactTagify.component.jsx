@@ -58,17 +58,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                     // Push Space
                                     tagified_text.push(' ');
                                 }
-                                else if (!text.match(/@[a-zA-Z0-9_]+/g)) {
-                                    // Push Non Hashtags texts
-                                    tagified_text.push(text)
-
-                                    // Push Space
-                                    tagified_text.push(' ');
-                                }
-                            });
-
-                            splitted.forEach((text) => {
-                                if (text.match(/@[a-zA-Z0-9_]+/g)){
+                                if (text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)){
 
                                     // Temp Child to Replace with last one
                                     tagified_text.push(
@@ -79,6 +69,13 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                             key={Math.floor(Math.random() * 9999999)}
                                         />
                                     );
+
+                                    // Push Space
+                                    tagified_text.push(' ');
+                                }
+                                else if (!text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)) {
+                                    // Push Non Hashtags texts
+                                    tagified_text.push(text)
 
                                     // Push Space
                                     tagified_text.push(' ');
@@ -114,14 +111,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                     // Push Space
                                     tagified_text.push(' ');
                                 }
-                                else if (!text.match(/@[a-zA-Z0-9_]+/g)) {
-                                    // Push Non Tags texts
-                                    tagified_text.push(text)
-
-                                    // Push Space
-                                    tagified_text.push(' ');
-                                }
-                                if (text.match(/@[a-zA-Z0-9_]+/g)){
+                                if (text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)){
 
                                     // Temp Child to Replace with last one
                                     tagified_text.push(
@@ -132,6 +122,13 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                             key={Math.floor(Math.random() * 9999999)}
                                         />
                                     );
+
+                                    // Push Space
+                                    tagified_text.push(' ');
+                                }
+                                else if (!text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)) {
+                                    // Push Non Hashtags texts
+                                    tagified_text.push(text)
 
                                     // Push Space
                                     tagified_text.push(' ');
