@@ -1,5 +1,14 @@
 # React Tagify
 📌 Say Welcome to Hashtags and Mentions To You'r React App
+<br />
+<br />
+<img src="https://img.shields.io/github/package-json/v/E-RROR/react-tagify/master?color=green&label=Version&style=flat-square"/>
+<span>
+<img src="https://img.shields.io/npm/v/react-tagify?color=red&style=flat-square" />
+</span>
+<span>
+<img src="https://img.shields.io/github/size/E-RROR/react-tagify/lib/ReactTagify.js?style=flat-square" />
+</span>
 
 ### Install
 ```js
@@ -25,7 +34,7 @@ function App() {
 And You Will See
 <br />
 <img 
-  src="https://raw.githubusercontent.com/E-RROR/react-tagify/master/src/install.png"
+  src="https://sinafarhadi.ir/assets/images/install.png"
   width="400"
 />
 
@@ -41,7 +50,7 @@ And You Will See
 You Will See
 <br />
 <img 
-  src="https://raw.githubusercontent.com/E-RROR/react-tagify/master/src/click.png"
+  src="https://sinafarhadi.ir/assets/images/click.png"
   width="400"
 />
 
@@ -56,6 +65,6 @@ You Will See
 You Will See
 <br />
 <img 
-  src="https://raw.githubusercontent.com/E-RROR/react-tagify/master/src/colorfull.png"
+  src="https://sinafarhadi.ir/assets/images/colorfull.png"
   width="400"
 />
