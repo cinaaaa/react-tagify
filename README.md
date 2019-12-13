@@ -3,7 +3,7 @@
 
 ### Install
 ```js
-$ npm install react-tagify
+$ yarn add react-tagify
 ```
 ### Usage
 ```jsx
