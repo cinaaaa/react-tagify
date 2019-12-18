@@ -1,6 +1,6 @@
 {
     "name": "react-tagify",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "📌 Say Welcome to Hashtags and Mentions To You'r React App",
     "main": "./lib/ReactTagify.js",
     "author": "Sina Farhadi",
@@ -40,8 +40,6 @@
         "path": "^0.12.7",
         "prop-types": "^15.7.2",
         "react": "^16.8.0",
-        "react-dom": "^16.8.0",
-        "react-tagify": "^0.0.4",
         "react-test-renderer": "^16.12.0",
         "webpack": "^4.5.0",
         "webpack-cli": "^3.2.1"
