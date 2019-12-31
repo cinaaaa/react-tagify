@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <h1>React Tagify</h1>
-      <ReactTagify colors={"red"} tagClicked={(tag)=>alert(tag)}>
+      <ReactTagify colors={"red"} tagClicked={(tag)=>alert(`You clicked on ${tag} tag`)}>
         <p>
           “You might not think that #programmers are #artists, but programming
           is an extremely creative #profession. It's logic-based creativity”
