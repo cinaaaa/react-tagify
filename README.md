@@ -1,5 +1,5 @@
 # React Tagify
-📢 A Powerful Pure React Component To Hashtags and Mentions To You'r React App.
+📢 Powerful Pure React Component For Hashtags and Mentions In You'r React App
 <br />
 <br />
 <img src="https://img.shields.io/github/package-json/v/E-RROR/react-tagify/master?color=green&label=Version&style=flat-square"/>
