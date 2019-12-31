@@ -34,7 +34,7 @@ function App() {
       <ReactTagify colors={"red"} tagClicked={(tag)=>alert(`You clicked on ${tag} tag`)}>
         <p>
           “You might not think that #programmers are #artists, but programming
-          is an extremely creative #profession. It's logic-based creativity”
+          is an extremely creative #profession. Its logic-based creativity”
           @JohnRomero
         </p>
       </ReactTagify>
