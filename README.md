@@ -1,5 +1,5 @@
 # React Tagify
-📢 Powerful Pure React Component For Hashtags and Mentions In You'r React App
+📛 Powerful Pure React Component For Hashtags and Mentions In You'r React App
 <br />
 <br />
 <img src="https://img.shields.io/github/package-json/v/E-RROR/react-tagify/master?color=green&label=Version&style=flat-square"/>
@@ -14,12 +14,12 @@
 </span>
 
 ### Install
-```js
+```bash
 $ yarn add react-tagify
 ```
 or
-```js
-$ npm install --save react-tagify
+```bash
+$ npm i react-tagify
 ```
 ### Usage
 ```jsx
