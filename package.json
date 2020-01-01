@@ -3,6 +3,7 @@
     "version": "0.0.7",
     "description": "📢 A Powerful Pure React Component To Hashtags and Mentions To You'r React App",
     "main": "./lib/ReactTagify.js",
+    "typings": "./lib/module.d.ts",
     "author": "Sina Farhadi",
     "license": "MIT",
     "scripts": {
