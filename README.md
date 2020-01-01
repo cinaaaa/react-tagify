@@ -101,6 +101,8 @@ ReactDOM.render(<App />, rootElement);
 | --- | --- | --- | --- |
 | tagClicked | PropTypes.func | null | Trigger a function and Its Return You The Tag Clicked |
 | colors  | PropTypes.string | '#0073e6' (Navy Blue) | Custom Color on Tags |
+| tagStyle  | PropTypes.object | undefined | Custom style for tags |
+| mentionStyle  | PropTypes.object | undefined | Custom style for mentions |
 
 
 ## Issues
