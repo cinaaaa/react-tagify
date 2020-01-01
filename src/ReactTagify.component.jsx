@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const ReactTagify = ({children, colors, tagClicked}) => {
+export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyle}) => {
 
     // Childs Maked Array
     const childs = React.Children.toArray((children));
 
     // Html Element
     const TempSpan = (props) => {
+        const defaultStyle = {
+            color: props.color,
+            cursor: props.tagClicked ? 'pointer': 'default',
+        };
+
         return (
             <span
-                style={{
-                    color: props.color,
-                    cursor: props.tagClicked ? 'pointer':'default',
-                }}
+                style={props.style || defaultStyle}
                 onClick={() => {
                     if (props.tagClicked) {
                         props.tagClicked(props.text);
@@ -50,6 +52,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                         <TempSpan
                                             text={text}
                                             color={colors}
+                                            style={tagStyle}
                                             tagClicked={tagClicked}
                                             key={Math.floor(Math.random() * 9999999)}
                                         />
@@ -65,6 +68,7 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
                                         <TempSpan
                                             text={text}
                                             color={colors}
+                                            style={mentionStyle}
                                             tagClicked={tagClicked}
                                             key={Math.floor(Math.random() * 9999999)}
                                         />
@@ -160,6 +164,8 @@ export const ReactTagify = ({children, colors, tagClicked}) => {
 
 ReactTagify.propTypes = {
     colors: PropTypes.string,
+    tagStyle: PropTypes.object,
+    mentionStyle: PropTypes.object,
     tagClicked: PropTypes.func
 };
 ReactTagify.defaultProps = {

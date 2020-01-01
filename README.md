@@ -45,6 +45,45 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
+
+### Use custom styling
+Provide custom styling to tags and mentions
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { ReactTagify } from "react-tagify";
+
+function App() {
+  const tagStyle = {
+    color: 'red',
+    fontWeight: 500,
+    cursor: 'pointer'
+  };
+
+  const mentionStyle = {
+    color: 'green',
+    textDecoration: 'underline',
+  }
+
+  return (
+    <div>
+      <h1>React Tagify</h1>
+      <ReactTagify tagStyle={tagStyle} mentionStyle={mentionStyle}>
+        <p>
+          “You might not think that #programmers are #artists, but programming
+          is an extremely creative #profession. Its logic-based creativity”
+          @JohnRomero
+        </p>
+      </ReactTagify>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
+
 ### Demo
 
 ![oie_3162851d5gaPaFm](https://user-images.githubusercontent.com/25178257/71611319-e0e2e180-2bbd-11ea-8cc5-e9e2c2b91a7f.gif)
