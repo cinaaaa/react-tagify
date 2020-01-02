@@ -1,14 +1,15 @@
 /*
-  - React Tagify @2020
-  - MIT Licence
-  Author = sina.farhadi@protonmail.com
-  Version 0.0.9
-  Github = https://github.com/E-RROR/react-tagify
-  For Pull Requests & Help Please See Our Github ^
+ * React Tagify
+ * 📛 Powerful Pure React Component For Hashtags and Mentions In You'r React App
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree
 */
+
+'use strict';
+
 import React from 'react';
 import PropTypes from 'prop-types';
-// Import Local Compnent
+/* Local Components */
 import {TempSpan} from './TempSpan.component';
 
 // React Tagify : )
