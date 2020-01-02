@@ -15,6 +15,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
 
         return (
             <span
+                data-testid="tag"
                 style={props.style || defaultStyle}
                 onClick={() => {
                     if (props.tagClicked) {
@@ -25,7 +26,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                     }
                 }}
             >
-                <span>{props.text}</span>
+                {props.text}
             </span>
         )
     };
