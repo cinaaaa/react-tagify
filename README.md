@@ -14,11 +14,11 @@
 </span>
 
 ### Install
-```bash
+```shell
 $ yarn add react-tagify
 ```
 or
-```bash
+```shell
 $ npm i react-tagify
 ```
 ### Usage
@@ -30,11 +30,11 @@ import { ReactTagify } from "react-tagify";
 function App() {
   return (
     <div>
-      <h1>React Tagify</h1>
       <ReactTagify colors={"red"} tagClicked={(tag)=>alert(`You clicked on ${tag} tag`)}>
         <p>
-          “You might not think that #programmers are #artists, but programming
-          is an extremely creative #profession. Its logic-based creativity”
+          “You might not think that #programmers are #artists,
+          but programming is an extremely creative #profession.
+          Its logic-based creativity”
           @JohnRomero
         </p>
       </ReactTagify>
@@ -45,6 +45,17 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
+
+### Demo
+
+![oie_3162851d5gaPaFm](https://user-images.githubusercontent.com/25178257/71611319-e0e2e180-2bbd-11ea-8cc5-e9e2c2b91a7f.gif)
+
+![oie_3163031dwZ6pVBw](https://user-images.githubusercontent.com/25178257/71611320-e0e2e180-2bbd-11ea-9c73-5fd21359a393.gif)
+
+![oie_3162943PEBY6ic9](https://user-images.githubusercontent.com/25178257/71611321-e0e2e180-2bbd-11ea-8822-9e6d63a5779c.gif)
+
+![oie_31641480Ic8MPad](https://user-images.githubusercontent.com/25178257/71611397-70889000-2bbe-11ea-863e-3ac79b8342ec.gif)
+
 
 ### Use custom styling
 Provide custom styling to tags and mentions
@@ -68,11 +79,13 @@ function App() {
 
   return (
     <div>
-      <h1>React Tagify</h1>
-      <ReactTagify tagStyle={tagStyle} mentionStyle={mentionStyle}>
+      <ReactTagify 
+        tagStyle={tagStyle}
+        mentionStyle={mentionStyle}>
         <p>
-          “You might not think that #programmers are #artists, but programming
-          is an extremely creative #profession. Its logic-based creativity”
+          “You might not think that #programmers are #artists,
+          but programming is an extremely creative #profession.
+          Its logic-based creativity”
           @JohnRomero
         </p>
       </ReactTagify>
@@ -84,15 +97,19 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-### Demo
+![oie_31641480Ic8MPad](https://sinafarhadi.ir/assets/img.png)
 
-![oie_3162851d5gaPaFm](https://user-images.githubusercontent.com/25178257/71611319-e0e2e180-2bbd-11ea-8cc5-e9e2c2b91a7f.gif)
 
-![oie_3163031dwZ6pVBw](https://user-images.githubusercontent.com/25178257/71611320-e0e2e180-2bbd-11ea-9c73-5fd21359a393.gif)
+### Test
+You Can Simply Test React Tagify with
 
-![oie_3162943PEBY6ic9](https://user-images.githubusercontent.com/25178257/71611321-e0e2e180-2bbd-11ea-8822-9e6d63a5779c.gif)
-
-![oie_31641480Ic8MPad](https://user-images.githubusercontent.com/25178257/71611397-70889000-2bbe-11ea-863e-3ac79b8342ec.gif)
+```shell
+  yarn test
+```
+or 
+```shell
+  npm test
+```
 
 
 ### Props/Options

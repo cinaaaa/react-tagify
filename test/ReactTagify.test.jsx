@@ -13,7 +13,7 @@ const renderTagify = props =>
     </Tagify>
   );
 
-test("extracts tags and mentions", () => {
+test("Extracts Tags And Mentions", () => {
   const { getAllByTestId } = renderTagify();
 
   const tags = getAllByTestId("tag");
@@ -21,7 +21,7 @@ test("extracts tags and mentions", () => {
   expect(tags.length).toBe(testTags.length + testMentions.length);
 });
 
-test("sets tag color", () => {
+test("Sets Tag Color", () => {
   const props = {
     colors: "red"
   };
@@ -33,7 +33,7 @@ test("sets tag color", () => {
   tags.forEach(tag => expect(tag).toHaveStyle(`color: ${props.colors}`));
 });
 
-test("handles tag click event", () => {
+test("Handles Tag Click Event", () => {
   const props = {
     tagClicked: jest.fn()
   };
@@ -50,7 +50,7 @@ test("handles tag click event", () => {
   expect(props.tagClicked).toBeCalledTimes(testTags.length + testMentions.length);
 });
 
-test("sets tag cursor to pointer", () => {
+test("Sets Tag Cursor To Pointer", () => {
   const props = {
     tagClicked: jest.fn()
   };
