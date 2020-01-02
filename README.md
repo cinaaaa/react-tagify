@@ -1,3 +1,5 @@
+<img src="https://sinafarhadi.ir/assets/images/react-tagify.png" width="200"/>
+
 # React Tagify
 📛 Powerful Pure React Component For Hashtags and Mentions In You'r React App
 <br />
