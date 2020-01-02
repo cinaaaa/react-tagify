@@ -10,7 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 /* Local Components */
-import {TempSpan} from './TempSpan.component';
+import {TempSpan} from './TempSpan.component.jsx';
 
 // React Tagify : )
 export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyle}) => {
