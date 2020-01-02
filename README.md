@@ -30,7 +30,9 @@ import { ReactTagify } from "react-tagify";
 function App() {
   return (
     <div>
-      <ReactTagify colors={"red"} tagClicked={(tag)=>alert(`You clicked on ${tag} tag`)}>
+      <ReactTagify 
+        colors={"red"} 
+        tagClicked={(tag)=> alert(tag)}>
         <p>
           “You might not think that #programmers are #artists,
           but programming is an extremely creative #profession.
