@@ -14,11 +14,11 @@
 </span>
 
 ### Install
-```shell
+```
 $ yarn add react-tagify
 ```
 or
-```shell
+```
 $ npm i react-tagify
 ```
 ### Usage
@@ -97,7 +97,9 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
+
 ![oie_31641480Ic8MPad](https://sinafarhadi.ir/assets/img.png)
+
 
 
 ### Test
