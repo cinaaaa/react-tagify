@@ -38,7 +38,7 @@ test("Handles Tag Click Event", () => {
     tagClicked: jest.fn()
   };
 
-  const { getAllByTestId,debug } = renderTagify(props);
+  const { getAllByTestId } = renderTagify(props);
 
   const tags = getAllByTestId("tag");
 
@@ -47,7 +47,9 @@ test("Handles Tag Click Event", () => {
     expect(props.tagClicked).toBeCalledWith(tag.innerHTML);
   });
 
-  expect(props.tagClicked).toBeCalledTimes(testTags.length + testMentions.length);
+  expect(props.tagClicked).toBeCalledTimes(
+    testTags.length + testMentions.length
+  );
 });
 
 test("Sets Tag Cursor To Pointer", () => {
@@ -60,5 +62,36 @@ test("Sets Tag Cursor To Pointer", () => {
   const tags = getAllByTestId("tag");
 
   tags.forEach(tag => expect(tag).toHaveStyle(`cursor: pointer`));
+});
 
+test("Sets a custom tag style", () => {
+  const props = {
+    tagStyle: {
+      color: "green",
+      fontWeight: 500
+    }
+  };
+  const expectedStyle = `color: green; font-weight: 500`;
+
+  const { getByText } = renderTagify(props);
+
+  testTags.forEach(testTag =>
+    expect(getByText(testTag)).toHaveStyle(expectedStyle)
+  );
+});
+
+test("Sets a custom mention style", () => {
+  const props = {
+    mentionStyle: {
+      color: "green",
+      fontWeight: 500
+    }
+  };
+  const expectedStyle = `color: green; font-weight: 500`;
+
+  const { getByText } = renderTagify(props);
+
+  testMentions.forEach(testMention =>
+    expect(getByText(testMention)).toHaveStyle(expectedStyle)
+  );
 });
