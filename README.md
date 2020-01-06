@@ -49,6 +49,7 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
+[![Live Example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-tagify-example-1-rr3gf?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Demo
 
@@ -79,13 +80,16 @@ function App() {
   const mentionStyle = {
     color: 'green',
     textDecoration: 'underline',
+    cursor: 'pointer'
   }
 
   return (
     <div>
       <ReactTagify 
         tagStyle={tagStyle}
-        mentionStyle={mentionStyle}>
+        mentionStyle={mentionStyle}
+        tagClicked={(tag) => alert(tag)}
+        >
         <p>
           “You might not think that #programmers are #artists,
           but programming is an extremely creative #profession.
@@ -100,9 +104,7 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
-
-
-![oie_31641480Ic8MPad](https://sinafarhadi.ir/assets/img.png)
+[![Edit react-tagify-custom-styling](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/cocky-rosalind-z3izz?fontsize=14&hidenavigation=1&theme=dark)
 
 
 
