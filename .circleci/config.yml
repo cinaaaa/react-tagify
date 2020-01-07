@@ -10,8 +10,26 @@ jobs:
     docker:
       - image: circleci/node:10.15.3
     steps:
-      - checkout
-      - run: npm test
+      # Npm CI uses the package-lock.json file to ensure exact versions
+      # This prevents changes and compromised upstream dependencies
+      # from changing your project. It wipes the node_modules directory
+      # so there is no need for a dependencies cache here.
+      - run: npm ci
+
+      # First we save the split test file names into an env
+      # Then we pass that to jest
+      - run:
+          name: Run Jest tests using test splitting
+          command: |
+            TESTFILES=$(circleci tests glob "test/*.test.js" | circleci tests split --split-by=timings)
+            npm test $TESTFILES
+
+      - store_test_results:
+          path: test_results
+
+      - store_artifacts:
+          path: test_results
+          destination: test_results
 workflows:
   version: 2
   build_and_test:
