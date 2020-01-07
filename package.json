@@ -46,6 +46,7 @@
         "webpack-cli": "^3.2.1"
     },
     "dependencies": {
-        "react-test-renderer": "^16.12.0"
+        "react-test-renderer": "^16.12.0",
+        "jest": "^24.9.0"
     }
 }
