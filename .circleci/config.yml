@@ -14,7 +14,7 @@ jobs:
       # This prevents changes and compromised upstream dependencies
       # from changing your project. It wipes the node_modules directory
       # so there is no need for a dependencies cache here.
-      - run: npm ci
+      - run: npm install
 
       # First we save the split test file names into an env
       # Then we pass that to jest
