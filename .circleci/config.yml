@@ -11,7 +11,7 @@ jobs:
       - image: circleci/node:10.15.3
     steps:
       - run: npm install
-      - run: npm install -g jest
+      - run: npm install jest
       - run: npm teset
 workflows:
   version: 2
