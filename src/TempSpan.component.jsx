@@ -1,8 +1,8 @@
 import React from 'react';
-// Html Element
-// Span Element That Regexped Text Moved In It
-// Any Text That Tagified Should Wrap in This TempSpan Component
+
+// Tempory Html Element
 export const TempSpan = (props) => {
+
     // Default Styles
     const defaultStyle = {
         color: props.color,
