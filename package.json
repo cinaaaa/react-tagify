@@ -1,6 +1,6 @@
 {
     "name": "react-tagify",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "📛 Powerful Pure React Component For Hashtags and Mentions In You'r React App",
     "main": "./lib/ReactTagify.js",
     "typings": "./lib/module.d.ts",
