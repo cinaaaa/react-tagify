@@ -12,7 +12,10 @@
 <img src="https://img.shields.io/npm/dw/react-tagify?style=flat-square" />
 </span>
 <span>
-<img src="https://img.shields.io/circleci/build/github/E-RROR/react-tagify" />
+<img src="https://img.shields.io/circleci/build/github/E-RROR/react-tagify?style=flat-square" />
+</span>
+<span>
+<img src="https://img.shields.io/codefactor/grade/github/E-RROR/react-tagify?style=flat-square"
 </span>
 
 ### Install
