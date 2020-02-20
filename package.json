@@ -1,7 +1,7 @@
 {
     "name": "react-tagify",
-    "version": "0.1.2",
-    "description": "📛 Powerful Pure React Component For Hashtags and Mentions In Your React App",
+    "version": "0.1.3",
+    "description": "📛 React Component For Extracting Hashtags, Mentions, Links In Your React App",
     "main": "./lib/ReactTagify.js",
     "typings": "./lib/module.d.ts",
     "author": "Sina Farhadi",

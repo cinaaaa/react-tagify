@@ -1,7 +1,7 @@
 <img src="https://sinafarhadi.ir/assets/images/react-tagify.png" width="200"/>
 
 # React Tagify
-📛 Powerful Pure React Component For Hashtags and Mentions In Your React App
+📛 React Component For Extracting Hashtags, Mentions, Links In Your React App
 <br />
 <br />
 <img src="https://img.shields.io/github/package-json/v/E-RROR/react-tagify/master?color=green&label=Version&style=flat-square"/>
@@ -107,6 +107,48 @@ ReactDOM.render(<App />, rootElement);
 [![Edit react-tagify-custom-styling](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/cocky-rosalind-z3izz?fontsize=14&hidenavigation=1&theme=dark)
 
 
+### Detect Links 🆕
+Detect Links and Custom Styles
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { ReactTagify } from "react-tagify";
+
+function App() {
+
+  const linkStyle = {
+    color: 'green',
+    textDecoration: 'underline',
+    cursor: 'pointer'
+  }
+
+  return (
+    <div>
+      <ReactTagify
+        linkStyle={linkStyle}
+        tagClicked={(tag) => alert(tag)}
+        detectLinks
+        detectMentions={false}
+        detectHashtags={false}
+        >
+        <p>
+          “You might not think that #programmers are #artists,
+          but programming is an extremely creative #profession.
+          Its logic-based creativity”
+          https://google.com
+          @JohnRomero
+        </p>
+      </ReactTagify>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
+
+
 
 ### Test
 You Can Simply Test React Tagify with
@@ -127,7 +169,11 @@ or
 | tagClicked | PropTypes.func | null | Trigger a function and Its Return You The Tag Clicked |
 | colors  | PropTypes.string | '#0073e6' (Navy Blue) | Custom Color on Tags |
 | tagStyle  | PropTypes.object | undefined | Custom style for tags |
+| linkStyle  | PropTypes.object | undefined | Custom style for links |
 | mentionStyle  | PropTypes.object | undefined | Custom style for mentions |
+| detectHashtags  | PropTypes.bool | true | detecting Hashtags enabled |
+| detectMentions  | PropTypes.bool | true | detecting Mentions enabled |
+| detectLinks | PropTypes.bool | true | detecting Links enabled |
 
 
 ## Issues
