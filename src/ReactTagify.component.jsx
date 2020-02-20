@@ -42,14 +42,18 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
             let splitted = input.props.children.split(" ");
 
             // This Is The Final List That All CHilds Append to It
-            let tagified_text = [' ']
+            let tagified_text = [' '];
 
             // Each String In Splitted List Now Check
             // We Check Them With Regexp
             splitted.forEach((text) => {
 
                 // This is Hashtag
-                if (text.match(/#[a-zA-Z0-9_]+/g) && !text.match(/@[a-zA-Z0-9_]+/g)){
+                if (
+                    text.match(/#[a-zA-Z0-9_]+/g) 
+                    && !text.match(/@[a-zA-Z0-9_]+/g) 
+                    && props.detectHashtags
+                    ){
 
                     // Pass Text In Temp Span Components
                     // And Push it to a List of All Element's
@@ -70,7 +74,11 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 }
 
                 // This is Mention
-                if (text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)){
+                if (
+                    text.match(/@[a-zA-Z0-9_]+/g) 
+                    && !text.match(/#[a-zA-Z0-9_]+/g) 
+                    && props.detectMentions
+                    ){
 
                     // Pass Text In Temp Span Components
                     // And Push it to a List of All Element's
@@ -90,8 +98,36 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                     tagified_text.push(' ');
                 }
 
+                // This is Link
+                if (
+                    text.match(/(https?:\/\/[^\s]+)/g)
+                    && props.detectLinks
+                    ){
+
+                    // Pass Text In Temp Span Components
+                    // And Push it to a List of All Element's
+                    tagified_text.push(
+                        <TempSpan
+                            text={text}
+                            color={colors}
+                            style={linkStyle}
+                            tagClicked={tagClicked}
+                            key={Math.floor(Math.random() * 9999999)}
+                        />
+                    );
+
+                    // Push Space In List
+                    // Text Splitted at First
+                    // We Need to Make Space between Them Again
+                    tagified_text.push(' ');
+                }
+
                 // It's Just Simple Text
-                else if (!text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)) {
+                else if (
+                    !text.match(/@[a-zA-Z0-9_]+/g) 
+                    && !text.match(/#[a-zA-Z0-9_]+/g) 
+                    && !text.match(/(https?:\/\/[^\s]+)/g) 
+                    ){
 
                     // Push Not Hashtags texts to Main List
                     tagified_text.push(text)
@@ -100,7 +136,8 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                     // Text Splitted at First
                     // We Need to Make Space between Them Again
                     tagified_text.push(' ');
-                }
+                };
+
             });
 
             // Generate React Element From The Given Child Tag
@@ -120,7 +157,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
         if (!input.props) {
 
             let splitted = input.split(" ");
-            let tagified_text = []
+            let tagified_text = [];
 
             // This Is Span Element for Cloning
             // Because Children Is Not Element at All
@@ -131,7 +168,11 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
             splitted.forEach((text) => {
 
                 // This is Hashtag
-                if (text.match(/#[a-zA-Z0-9_]+/g) && !text.match(/@[a-zA-Z0-9_]+/g)){
+                if (
+                    text.match(/#[a-zA-Z0-9_]+/g)
+                    && !text.match(/@[a-zA-Z0-9_]+/g)
+                    && props.detectHashtags
+                    ){
 
                     // Push it to a List of All Element's
                     tagified_text.push(
@@ -149,7 +190,11 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 }
 
                 // This is Mention
-                if (text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)){
+                if (
+                    text.match(/@[a-zA-Z0-9_]+/g) 
+                    && !text.match(/#[a-zA-Z0-9_]+/g)
+                    && props.detectMentions
+                    ){
 
                     // And Push it to a List of All Element's
                     tagified_text.push(
@@ -166,8 +211,35 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                     tagified_text.push(' ');
                 }
 
+                if (
+                    text.match(/(https?:\/\/[^\s]+)/g)
+                    && props.detectLinks
+                    ){
+
+                    // Pass Text In Temp Span Components
+                    // And Push it to a List of All Element's
+                    tagified_text.push(
+                        <TempSpan
+                            text={text}
+                            color={colors}
+                            style={linkStyle}
+                            tagClicked={tagClicked}
+                            key={Math.floor(Math.random() * 9999999)}
+                        />
+                    );
+
+                    // Push Space In List
+                    // Text Splitted at First
+                    // We Need to Make Space between Them Again
+                    tagified_text.push(' ');
+                }
+
                 // It's Just Simple Text
-                else if (!text.match(/@[a-zA-Z0-9_]+/g) && !text.match(/#[a-zA-Z0-9_]+/g)) {
+                else if (
+                    !text.match(/@[a-zA-Z0-9_]+/g) 
+                    && !text.match(/#[a-zA-Z0-9_]+/g) 
+                    && !text.match(/(https?:\/\/[^\s]+)/g)
+                    ){
 
                     // Push Not Tagified texts
                     tagified_text.push(text)
@@ -205,8 +277,15 @@ ReactTagify.propTypes = {
     colors: PropTypes.string,
     tagStyle: PropTypes.object,
     mentionStyle: PropTypes.object,
-    tagClicked: PropTypes.func
+    linkStyle: PropTypes.object,
+    tagClicked: PropTypes.func,
+    detectHashtags: PropTypes.bool,
+    detectMentions: PropTypes.bool,
+    detectLinks: PropTypes.bool,
 };
 ReactTagify.defaultProps = {
     colors: '#0073e6',
+    detectHashtags: true,
+    detectMentions: true,
+    detectLinks: true,
 };
