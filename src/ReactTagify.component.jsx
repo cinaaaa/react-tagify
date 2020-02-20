@@ -16,7 +16,17 @@ import PropTypes from 'prop-types';
 import {TempSpan} from './TempSpan.component.jsx';
 
 // React Tagify : )
-export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyle}) => {
+export const ReactTagify = ({
+        children,
+        colors, 
+        tagClicked, 
+        tagStyle, 
+        mentionStyle, 
+        linkStyle,
+        detectHashtags,
+        detectLinks,
+        detectMentions
+    }) => {
 
     // Array Of Childs That in Component We Have To Reach Them With React Children toArray
     const childs = React.Children.toArray((children));
@@ -52,7 +62,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 if (
                     text.match(/#[a-zA-Z0-9_]+/g) 
                     && !text.match(/@[a-zA-Z0-9_]+/g) 
-                    && props.detectHashtags
+                    && detectHashtags
                     ){
 
                     // Pass Text In Temp Span Components
@@ -77,7 +87,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 if (
                     text.match(/@[a-zA-Z0-9_]+/g) 
                     && !text.match(/#[a-zA-Z0-9_]+/g) 
-                    && props.detectMentions
+                    && detectMentions
                     ){
 
                     // Pass Text In Temp Span Components
@@ -101,7 +111,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 // This is Link
                 if (
                     text.match(/(https?:\/\/[^\s]+)/g)
-                    && props.detectLinks
+                    && detectLinks
                     ){
 
                     // Pass Text In Temp Span Components
@@ -171,7 +181,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 if (
                     text.match(/#[a-zA-Z0-9_]+/g)
                     && !text.match(/@[a-zA-Z0-9_]+/g)
-                    && props.detectHashtags
+                    && detectHashtags
                     ){
 
                     // Push it to a List of All Element's
@@ -193,7 +203,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
                 if (
                     text.match(/@[a-zA-Z0-9_]+/g) 
                     && !text.match(/#[a-zA-Z0-9_]+/g)
-                    && props.detectMentions
+                    && detectMentions
                     ){
 
                     // And Push it to a List of All Element's
@@ -213,7 +223,7 @@ export const ReactTagify = ({children, colors, tagClicked, tagStyle, mentionStyl
 
                 if (
                     text.match(/(https?:\/\/[^\s]+)/g)
-                    && props.detectLinks
+                    && detectLinks
                     ){
 
                     // Pass Text In Temp Span Components
