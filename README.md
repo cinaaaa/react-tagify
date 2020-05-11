@@ -1,5 +1,3 @@
-<img src="https://sinafarhadi.ir/assets/images/react-tagify.png" width="200"/>
-
 # React Tagify
 📛 React Component For Extracting Hashtags, Mentions, Links In Your React App
 <br />
