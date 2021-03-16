@@ -47,7 +47,6 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
-[![Live Example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-tagify-example-1-rr3gf?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Demo
 
@@ -102,8 +101,6 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
-[![Edit react-tagify-custom-styling](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/cocky-rosalind-z3izz?fontsize=14&hidenavigation=1&theme=dark)
-
 
 ### Props/Options
 
@@ -117,7 +114,3 @@ ReactDOM.render(<App />, rootElement);
 | detectHashtags  | PropTypes.bool | true | detecting Hashtags enabled |
 | detectMentions  | PropTypes.bool | true | detecting Mentions enabled |
 | detectLinks | PropTypes.bool | true | detecting Links enabled |
-
-
-## Issues
-The recommended medium to report and track issues is by opening one on [Github](https://github.com/E-RROR/react-tagify/issues).
