@@ -7,9 +7,6 @@
 <img src="https://img.shields.io/npm/v/react-tagify?color=red&style=flat-square" />
 </span>
 <span>
-<img src="https://img.shields.io/circleci/build/github/E-RROR/react-tagify?style=flat-square" />
-</span>
-<span>
 <img src="https://img.shields.io/codefactor/grade/github/E-RROR/react-tagify?style=flat-square" />
 </span>
 
