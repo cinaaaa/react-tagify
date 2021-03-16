@@ -105,61 +105,6 @@ ReactDOM.render(<App />, rootElement);
 [![Edit react-tagify-custom-styling](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/cocky-rosalind-z3izz?fontsize=14&hidenavigation=1&theme=dark)
 
 
-### Detect Links 🆕
-Detect Links and Custom Styles
-
-```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { ReactTagify } from "react-tagify";
-
-function App() {
-
-  const linkStyle = {
-    color: 'green',
-    textDecoration: 'underline',
-    cursor: 'pointer'
-  }
-
-  return (
-    <div>
-      <ReactTagify
-        linkStyle={linkStyle}
-        tagClicked={(tag) => alert(tag)}
-        detectLinks
-        detectMentions={false}
-        detectHashtags={false}
-        >
-        <p>
-          “You might not think that #programmers are #artists,
-          but programming is an extremely creative #profession.
-          Its logic-based creativity”
-          https://google.com
-          @JohnRomero
-        </p>
-      </ReactTagify>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-```
-
-
-
-### Test
-You Can Simply Test React Tagify with
-
-```shell
-  yarn test
-```
-or 
-```shell
-  npm test
-```
-
-
 ### Props/Options
 
 | Name | Type| Default | Description |
