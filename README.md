@@ -110,4 +110,3 @@ ReactDOM.render(<App />, rootElement);
 | mentionStyle  | PropTypes.object | undefined | Custom style for mentions |
 | detectHashtags  | PropTypes.bool | true | detecting Hashtags enabled |
 | detectMentions  | PropTypes.bool | true | detecting Mentions enabled |
-| detectLinks | PropTypes.bool | true | detecting Links enabled |
