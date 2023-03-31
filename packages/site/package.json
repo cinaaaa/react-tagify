@@ -1,6 +1,6 @@
 {
   "name": "my-site",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-tagify": "*",
     "@vitejs/plugin-react": "^3.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tagify": "^0.1.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
