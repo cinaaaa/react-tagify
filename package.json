@@ -1,19 +1,10 @@
 {
     "name": "react-tagify",
-    "version": "0.1.5",
-    "description": "Highlight #hashtags and @mentions in React",
-    "author": "Sina Farhadi",
-    "private": "true",
-    "license": "MIT",
     "workspaces": {
         "packages": [
             "packages/*",
             "site/*"
         ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cinaaaa/react-tagify.git"
     },
     "scripts": {
         "prepare": "husky install",
@@ -23,19 +14,6 @@
         "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
         "lint-staged": "yarn lint:fix && yarn format"
     },
-    "keywords": [
-        "react",
-        "react-tagify",
-        "tag",
-        "mention",
-        "highlight",
-        "tag-highlight",
-        "mention-highlight"
-    ],
-    "bugs": {
-        "url": "https://github.com/cinaaaa/react-tagify/issues"
-    },
-    "homepage": "https://cinaaaa.github.io/react-tagify/",
     "devDependencies": {
         "@types/node": "^18.15.11",
         "eslint-plugin-simple-import-sort": "^10.0.0",
