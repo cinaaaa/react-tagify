@@ -2,12 +2,12 @@
 📛 React Component For Extracting Hashtags, Mentions, Links In Your React App
 <br />
 <br />
-<img src="https://img.shields.io/github/package-json/v/E-RROR/react-tagify/master?color=green&label=Version&style=flat-square"/>
+<img src="https://img.shields.io/github/package-json/v/cinaaaa/react-tagify/master?color=green&label=Version&style=flat-square"/>
 <span>
 <img src="https://img.shields.io/npm/v/react-tagify?color=red&style=flat-square" />
 </span>
 <span>
-<img src="https://img.shields.io/codefactor/grade/github/E-RROR/react-tagify?style=flat-square" />
+<img src="https://img.shields.io/codefactor/grade/github/cinaaaa/react-tagify?style=flat-square" />
 </span>
 
 ### Install

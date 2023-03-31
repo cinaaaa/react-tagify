@@ -4,14 +4,14 @@ Thanks for your interest in React Tagify. We welcome all forms of contribution -
 
 ## Team members
 
-Elemental is built by [@E-RROR](https://github.com/E-RROR)
+Elemental is built by [@cinaaaa](https://github.com/cinaaaa)
 
 # Bug triage
 
 This sections explains how bug triaging is done for your project. Help beginners by including examples to good bug reports and providing them questions they should look to answer.
 
-* You can help report bugs by filing them here: [Issue Tracker](https://github.com/E-RROR/react-tagify/issues)
-* You can look through the existing bugs here: [Bugs](https://github.com/E-RROR/react-tagify/labels/bug).
+* You can help report bugs by filing them here: [Issue Tracker](https://github.com/cinaaaa/react-tagify/issues)
+* You can look through the existing bugs here: [Bugs](https://github.com/cinaaaa/react-tagify/labels/bug).
 
 * You can help us diagnose and fix existing bugs by asking and providing answers for the following:
 

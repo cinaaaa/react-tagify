@@ -1,9 +1,8 @@
 {
     "name": "react-tagify",
-    "version": "0.1.4",
-    "description": "📛 React Component For Extracting Hashtags, Mentions, Links In Your React App",
+    "version": "0.1.5",
+    "description": "Highlight #hashtags and @mentions in React",
     "main": "./lib/ReactTagify.js",
-    "typings": "./lib/module.d.ts",
     "author": "Sina Farhadi",
     "license": "MIT",
     "scripts": {
@@ -12,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/E-RROR/react-tagify.git"
+        "url": "git+https://github.com/cinaaaa/react-tagify.git"
     },
     "keywords": [
         "react",
@@ -24,9 +23,9 @@
         "mention-highlight"
     ],
     "bugs": {
-        "url": "https://github.com/E-RROR/react-tagify/issues"
+        "url": "https://github.com/cinaaaa/react-tagify/issues"
     },
-    "homepage": "https://sinafarhadi.ir/ReactTagify/",
+    "homepage": "https://cinaaaa.github.io/react-tagify/",
     "peerDependencies": {
         "prop-types": "^15.7.2"
     },
