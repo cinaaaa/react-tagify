@@ -27,5 +27,5 @@
         "eslint-plugin-promise": "^6.0.0",
         "eslint-plugin-react": "^7.32.2"
     },
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
