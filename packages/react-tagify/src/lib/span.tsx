@@ -1,33 +1,24 @@
-import React from 'react';
+interface SpanElement {
+    text: string;
+    color: string;
+    style?: any;
+    onClick?: (text: string) => void;
+}
 
-// Tempory Html Element
-export const TempSpan = (props: any) => {
-
-    // Default Styles
+export const SpanElement = (props: SpanElement) => {
     const defaultStyle = {
         color: props.color,
-        cursor: props.tagClicked ? 'pointer': 'default',
+        cursor: props.onClick ? 'pointer': 'default',
     };
 
-    // Return Of Temp Span
-    // It Will Be An Span Tag
+    const spanStyle = props.style || defaultStyle;
+
     return (
       <span
-          data-testid="tag"
-          style={props.style || defaultStyle}
-          onClick={() => {
-              // If tagClicked Props we Return
-              // Value Of The Tag If Clicked
-              if (props.tagClicked) {
-                  props.tagClicked(props.text);
-              }
-              // Nothing Do
-              else {
-                  //
-              }
-          }}
+          style={spanStyle}
+          onClick={() => props?.onClick && props.onClick(props.text)}
       >
-      {props.text}
+        {props.text}
       </span>
     )
 };

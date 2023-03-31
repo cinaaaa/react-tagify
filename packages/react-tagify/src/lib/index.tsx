@@ -1,1 +1,1 @@
-export { default as ReactTagify } from './code';
+export { default as Tagify } from './tagify';
