@@ -7,6 +7,8 @@ Empower your React applications with effortless #tag and @mention support ❤️
 
 React Tagify is a powerful and pure React component for handling hashtags and mentions in your React app with ease. Give your users the ability to mention others and add tags to their content seamlessly.
 
+For more information and demo, visit our website [here](https://cinaaaa.github.io/react-tagify/).
+
 ## Features
 
 - 🚀 Easy to integrate
