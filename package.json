@@ -2,16 +2,15 @@
     "name": "react-tagify",
     "version": "0.1.5",
     "description": "Highlight #hashtags and @mentions in React",
-    "main": "./lib/ReactTagify.js",
     "author": "Sina Farhadi",
     "license": "MIT",
-    "scripts": {
-        "test": "jest",
-        "build": "webpack"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/cinaaaa/react-tagify.git"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "test": "echo test"
     },
     "keywords": [
         "react",
@@ -26,25 +25,11 @@
         "url": "https://github.com/cinaaaa/react-tagify/issues"
     },
     "homepage": "https://cinaaaa.github.io/react-tagify/",
-    "peerDependencies": {
-        "prop-types": "^15.7.2"
-    },
     "devDependencies": {
-        "@babel/core": "^7.7.7",
-        "@babel/preset-env": "^7.7.7",
-        "@babel/preset-react": "^7.7.4",
-        "@testing-library/jest-dom": "^5.11.9",
-        "@testing-library/react": "^11.2.5",
-        "babel-jest": "^26.6.3",
-        "babel-loader": "^8.0.6",
-        "jest": "^26.6.3",
-        "prop-types": "^15.7.2",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "webpack": "^5.26.0",
-        "webpack-cli": "^4.5.0"
+        "@types/node": "^18.15.11",
+        "vite-plugin-dts": "^2.1.0"
     },
     "dependencies": {
-        "react-test-renderer": "^17.0.1"
+        "@vitejs/plugin-react": "^3.1.0"
     }
 }
