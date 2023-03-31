@@ -164,7 +164,7 @@ function App() {
 
   return (
     <div className="App" style={{ textAlign: "left" }}>
-      <h1>React Tagify #️@🔥</h1>
+      <h1>✨ React Tagify #️@</h1>
       <Tagify
         onClick={(text, type) =>
           setText(

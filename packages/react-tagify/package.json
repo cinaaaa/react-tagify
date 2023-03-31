@@ -1,6 +1,6 @@
 {
   "name": "react-tagify",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Empower your React applications with effortless #tag and @mention support",
   "author": "Sina Farhadi",
   "scripts": {

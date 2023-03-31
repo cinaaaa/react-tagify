@@ -1,5 +1,5 @@
 ![React Tagify Promo Tweet](https://github.com/cinaaaa/react-tagify/blob/refactor/new/packages/site/src/assets/promo-tweet.png)
-# React Tagify #️@🔥
+# ✨ React Tagify #️@
 Empower your React applications with effortless <span style="color: blue">#tag</span> and  <span style="color: blue">@mention</span> support ❤️
 <br />
 <img src="https://img.shields.io/github/package-json/v/cinaaaa/react-tagify/master?color=green&label=Version&style=flat-square"/>
@@ -41,15 +41,11 @@ import { Tagify } from 'react-tagify';
 ```jsx
 <Tagify
   onClick={(text, type) => console.log(text, type)}
-  tagStyle={{ fontWeight: 'bold' }}
-  mentionStyle={{ fontStyle: 'italic' }}
-  detectHashtags
-  detectMentions
 >
   <p>
-    This is an example of a #hashtag and a @mention inside a Tagify component.
+    This is a #React component with help of #ReactTagify!
   </p>
-</ReactTagify>
+</Tagify>
 ```
 
 ## Props
