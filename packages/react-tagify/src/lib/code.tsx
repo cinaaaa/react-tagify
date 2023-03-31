@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { TempSpan } from './span';
 
 interface ReactTagifyProps {
   children?: ReactNode;
@@ -55,14 +56,13 @@ const ReactTagify: React.FC<ReactTagifyProps> = ({
 
       if (matchedType) {
         tagifiedText.push(
-          // <TempSpan
-          //   key={`${text}-${index}`}
-          //   text={text}
-          //   color={colors}
-          //   style={styleMap[matchedType]}
-          //   tagClicked={tagClicked}
-          // />,
-          <span>test</span>
+          <TempSpan
+            key={`${text}-${index}`}
+            text={text}
+            color={colors}
+            style={styleMap[matchedType]}
+            tagClicked={tagClicked}
+          />,
         );
       } else {
         tagifiedText.push(text);
@@ -81,6 +81,7 @@ const ReactTagify: React.FC<ReactTagifyProps> = ({
       const { children: childContent } = child.props;
 
       if (typeof childContent === 'string') {
+        // @ts-ignore
         return React.cloneElement(child, { children: processText(childContent) });
       }
     } else if (typeof child === 'string') {

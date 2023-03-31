@@ -3,7 +3,14 @@
     "version": "0.1.5",
     "description": "Highlight #hashtags and @mentions in React",
     "author": "Sina Farhadi",
+    "private": "true",
     "license": "MIT",
+    "workspaces": {
+        "packages": [
+            "packages/*",
+            "site/*"
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/cinaaaa/react-tagify.git"
@@ -11,7 +18,10 @@
     "scripts": {
         "prepare": "husky install",
         "test": "echo test",
-        "lint": "tsc && prettier . --write --ignore-unknown && eslint --ignore-path .gitignore ."
+        "lint": "tsc && prettier . --write --ignore-unknown && eslint --ignore-path .gitignore .",
+        "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
+        "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
+        "lint-staged": "yarn lint:fix && yarn format"
     },
     "keywords": [
         "react",
@@ -28,9 +38,15 @@
     "homepage": "https://cinaaaa.github.io/react-tagify/",
     "devDependencies": {
         "@types/node": "^18.15.11",
-        "vite-plugin-dts": "^2.1.0"
-    },
-    "dependencies": {
-        "@vitejs/plugin-react": "^3.1.0"
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "prettier": "^2.8.7",
+        "react-hooks": "^1.0.1",
+        "vite-plugin-dts": "^2.1.0",
+        "eslint": "^8.0.1",
+        "eslint-config-standard-with-typescript": "^34.0.1",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-react": "^7.32.2"
     }
 }
