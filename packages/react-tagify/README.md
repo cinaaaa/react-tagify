@@ -53,7 +53,7 @@ import { Tagify } from 'react-tagify';
 | Prop           | Type     | Default | Description                                                       |
 |----------------|----------|---------|-------------------------------------------------------------------|
 | children       | ReactNode |   -     | The content to be processed for tags and mentions.                |
-| colors         | string   | '#0073e6' | The color of the tags and mentions.                               |
+| color         | string   | '#0073e6' | The color of the tags and mentions.                               |
 | onClick        | function |   -     | A callback function that is called when a tag or mention is clicked. Receives the clicked element as an argument and type of it |
 | tagStyle       | object   |   -     | The CSS style object for hashtag styling.                         |
 | mentionStyle   | object   |   -     | The CSS style object for mention styling.                         |
