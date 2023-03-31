@@ -1,8 +1,9 @@
 {
   "name": "react-tagify",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Empower your React applications with effortless #tag and @mention support",
   "author": "Sina Farhadi",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -27,7 +28,6 @@
     "vite": "^2.7.13",
     "vite-plugin-dts": "^0.9.9"
   },
-  "license": "UNLICENSED",
   "peerDependencies": {
     "react": "^16.8.0 || 17.x",
     "react-dom": "^16.8.0 || 17.x",
@@ -57,7 +57,7 @@
   "bugs": {
     "url": "https://github.com/cinaaaa/react-tagify/issues"
   },
-  "homepage": "https://cinaaaa.github.io/react-tagify/",
+  "homepage": "https://react-tagify-site.vercel.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cinaaaa/react-tagify.git"
