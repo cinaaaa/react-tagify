@@ -1,3 +1,4 @@
+![React Tagify Promo Tweet](https://github.com/cinaaaa/react-tagify/blob/refactor/new/packages/site/src/assets/promo-tweet.png)
 # React Tagify #️@🔥
 Empower your React applications with effortless #tag and @mention support ❤️
 
