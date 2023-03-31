@@ -1,9 +1,8 @@
 ![React Tagify Promo Tweet](https://github.com/cinaaaa/react-tagify/blob/refactor/new/packages/site/src/assets/promo-tweet.png)
 # React Tagify #️@🔥
 Empower your React applications with effortless #tag and @mention support ❤️
+<br />
 <img src="https://img.shields.io/github/package-json/v/cinaaaa/react-tagify/master?color=green&label=Version&style=flat-square"/>
-<span>
-<img src="https://img.shields.io/codefactor/grade/github/cinaaaa/react-tagify?style=flat-square" />
 
 React Tagify is a powerful and pure React component for handling hashtags and mentions in your React app with ease. Give your users the ability to mention others and add tags to their content seamlessly.
 
