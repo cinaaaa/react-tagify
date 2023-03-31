@@ -10,7 +10,8 @@
     },
     "scripts": {
         "prepare": "husky install",
-        "test": "echo test"
+        "test": "echo test",
+        "lint": "tsc && prettier . --write --ignore-unknown && eslint --ignore-path .gitignore ."
     },
     "keywords": [
         "react",
