@@ -1,6 +1,6 @@
 ![React Tagify Promo Tweet](https://github.com/cinaaaa/react-tagify/blob/refactor/new/packages/site/src/assets/promo-tweet.png)
 # React Tagify #️@🔥
-Empower your React applications with effortless #tag and @mention support ❤️
+Empower your React applications with effortless <span style="color: blue">#tag</span> and  <span style="color: blue">@mention</span> support ❤️
 <br />
 <img src="https://img.shields.io/github/package-json/v/cinaaaa/react-tagify/master?color=green&label=Version&style=flat-square"/>
 
@@ -40,7 +40,7 @@ import { Tagify } from 'react-tagify';
 
 ```jsx
 <Tagify
-  onClick={(type, value) => console.log(type, value)}
+  onClick={(text, type) => console.log(text, type)}
   tagStyle={{ fontWeight: 'bold' }}
   mentionStyle={{ fontStyle: 'italic' }}
   detectHashtags
@@ -58,7 +58,7 @@ import { Tagify } from 'react-tagify';
 |----------------|----------|---------|-------------------------------------------------------------------|
 | children       | ReactNode |   -     | The content to be processed for tags and mentions.                |
 | colors         | string   | '#0073e6' | The color of the tags and mentions.                               |
-| onClick        | function |   -     | A callback function that is called when a tag or mention is clicked. Receives the clicked element as an argument. |
+| onClick        | function |   -     | A callback function that is called when a tag or mention is clicked. Receives the clicked element as an argument and type of it |
 | tagStyle       | object   |   -     | The CSS style object for hashtag styling.                         |
 | mentionStyle   | object   |   -     | The CSS style object for mention styling.                         |
 | detectHashtags | boolean  |  true   | Enable or disable the detection of hashtags.                      |

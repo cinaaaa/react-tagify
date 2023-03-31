@@ -7,22 +7,8 @@ const mentionOrTag = (type: "tag" | "mention" | null) => type === 'tag' ? '#' : 
 
 // Simple snack bar component
 const SnackBar = ({ text }: { text: string }) => {
-  const styles = {
-    container: {
-      position: "fixed",
-      top: "0",
-      left: "0",
-      right: "0",
-      background: "#fff",
-      color: "#000",
-      padding: "15px",
-      textAlign: "center",
-      zIndex: "100",
-    },
-  };
-
   return (
-    <div style={styles.container}>
+    <div className="container">
       <Tagify color="red">{text}</Tagify>
     </div>
   );
@@ -48,10 +34,6 @@ const Code = ({ children }: any) => {
 
 const TweetGrid = ({ tweets, setText }: any) => {
   const styles = {
-    grid: {
-      display: "flex",
-      flexWrap: "wrap",
-    },
     tweet: {
       flex: "1 0 300px",
       boxSizing: "border-box",
@@ -60,8 +42,8 @@ const TweetGrid = ({ tweets, setText }: any) => {
   };
 
   return (
-    <div style={styles.grid}>
-      {tweets.map((tweet, index) => (
+    <div className="grid">
+      {tweets.map((tweet: any, index: number) => (
         <Tweet key={index} {...tweet} style={styles.tweet} setText={setText} />
       ))}
     </div>
@@ -112,7 +94,7 @@ const Tweet = ({ username, displayName, avatarUrl, content, style, setText }: an
           alt={`${displayName} avatar`}
           style={styles.avatar}
         />
-        <div style={styles.nameContainer}>
+        <div className="name-container">
           <span style={styles.displayName}>{displayName}</span>
           <span style={styles.username}>@{username}</span>
         </div>
