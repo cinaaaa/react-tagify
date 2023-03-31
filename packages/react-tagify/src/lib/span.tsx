@@ -14,6 +14,7 @@ export const SpanElement = (props: SpanElement) => {
   };
 
   const spanStyle = props.style || defaultStyle;
+
   return (
     <span
       style={spanStyle}

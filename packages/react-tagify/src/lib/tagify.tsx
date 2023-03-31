@@ -4,7 +4,7 @@ import { getMatchedType } from '../helpers';
 import type { TagifyProps } from '../@types/tagify';
 
 const Tagify: React.FC<TagifyProps> = ({
-  children,
+  children = <></>,
   color = '#0073e6',
   onClick,
   tagStyle,
