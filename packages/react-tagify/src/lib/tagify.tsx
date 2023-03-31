@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import type { TagifyProps } from '../@types/tagify';
-import { getMatchedType } from '../helpers/matchers';
 import { SpanElement } from './span';
+import { getMatchedType } from '../helpers/matchers';
+import type { TagifyProps } from '../@types/tagify';
 
 const Tagify: React.FC<TagifyProps> = ({
   children,
