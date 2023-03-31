@@ -138,7 +138,7 @@ function App() {
       displayName: "Jane",
       avatarUrl: "https://api.dicebear.com/6.x/pixel-art/svg?seed=Jane",
       content:
-        "This is a sample tweet using a React component with inline styling!",
+        "Now it's easy peasy to add #tag and @mention support to your #React applications!",
       timestamp: "10 minutes ago",
     },
   ];
@@ -149,7 +149,7 @@ function App() {
       displayName: "Michael",
       avatarUrl: "https://api.dicebear.com/6.x/pixel-art/svg?seed=Michael",
       content:
-        "This is a sample tweet using a #React component @with inline styling!",
+        "As @steve_jobs says, this is a #React component with help of #ReactTagify!",
       timestamp: "10 minutes ago",
     },
     {
@@ -157,7 +157,7 @@ function App() {
       displayName: "Sofia",
       avatarUrl: "https://api.dicebear.com/6.x/pixel-art/svg?seed=Sofia",
       content:
-        "This is a sample tweet using a React component with inline styling!",
+        "React tagify was the best #product I've ever used. I'm so happy with it! @wladimir_putin",
       timestamp: "10 minutes ago",
     },
   ];
