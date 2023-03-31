@@ -6,13 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prepare": "husky install"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^16.8.0 || 17.x",
-    "react-dom": "^16.8.0 || 17.x",
-    "styled-components": "^5.0.0"
+    "react-dom": "^16.8.0 || 17.x"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -24,9 +22,7 @@
     "@vitejs/plugin-react": "^1.1.4",
     "acorn-jsx": "^5.3.2",
     "babel-loader": "^8.2.3",
-    "husky": "^8.0.3",
     "prettier": "^2.8.7",
-    "react-hooks": "^1.0.1",
     "typescript": "*",
     "vite": "^2.7.13",
     "vite-plugin-dts": "^0.9.9"

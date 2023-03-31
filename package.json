@@ -7,7 +7,6 @@
         ]
     },
     "scripts": {
-        "prepare": "husky install",
         "test": "echo test",
         "lint": "tsc && prettier . --write --ignore-unknown && eslint --ignore-path .gitignore .",
         "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
