@@ -1,112 +1,67 @@
-# React Tagify
-📛 React Component For Extracting Hashtags, Mentions, Links In Your React App
-<br />
-<br />
-<img src="https://img.shields.io/github/package-json/v/cinaaaa/react-tagify/master?color=green&label=Version&style=flat-square"/>
-<span>
-<img src="https://img.shields.io/npm/v/react-tagify?color=red&style=flat-square" />
-</span>
-<span>
-<img src="https://img.shields.io/codefactor/grade/github/cinaaaa/react-tagify?style=flat-square" />
-</span>
+# React Tagify #️@🔥
+Empower your React applications with effortless #tag and @mention support ❤️
 
-### Install
-```
-$ yarn add react-tagify
-```
-or
-```
-$ npm i react-tagify
-```
-### Usage
-```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { ReactTagify } from "react-tagify";
+React Tagify is a powerful and pure React component for handling hashtags and mentions in your React app with ease. Give your users the ability to mention others and add tags to their content seamlessly.
 
-function App() {
-  return (
-    <div>
-      <ReactTagify 
-        colors={"red"} 
-        tagClicked={(tag)=> alert(tag)}>
-        <p>
-          “You might not think that #programmers are #artists,
-          but programming is an extremely creative #profession.
-          Its logic-based creativity”
-          @JohnRomero
-        </p>
-      </ReactTagify>
-    </div>
-  );
-}
+## Features
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+- 🚀 Easy to integrate
+- 🎨 Customizable colors and styles
+- 🔗 Supports #HashTags and @Mentions
+- 📦 Lightweight
+
+## Installation
+
+Install the package using npm or yarn:
+
+```bash
+npm i react-tagify
 ```
 
-### Demo
+or 
 
-![oie_3162851d5gaPaFm](https://user-images.githubusercontent.com/25178257/71611319-e0e2e180-2bbd-11ea-8cc5-e9e2c2b91a7f.gif)
+```bash
+yarn add react-tagify
+```
+## Usage
 
-![oie_3163031dwZ6pVBw](https://user-images.githubusercontent.com/25178257/71611320-e0e2e180-2bbd-11ea-9c73-5fd21359a393.gif)
+1. Import the Tagify component:
 
-![oie_3162943PEBY6ic9](https://user-images.githubusercontent.com/25178257/71611321-e0e2e180-2bbd-11ea-8822-9e6d63a5779c.gif)
+```js
+import { Tagify } from 'react-tagify';
+```
 
-![oie_31641480Ic8MPad](https://user-images.githubusercontent.com/25178257/71611397-70889000-2bbe-11ea-863e-3ac79b8342ec.gif)
-
-
-### Use custom styling
-Provide custom styling to tags and mentions
+2. Wrap your content with the Tagify component:
 
 ```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { ReactTagify } from "react-tagify";
-
-function App() {
-  const tagStyle = {
-    color: 'red',
-    fontWeight: 500,
-    cursor: 'pointer'
-  };
-
-  const mentionStyle = {
-    color: 'green',
-    textDecoration: 'underline',
-    cursor: 'pointer'
-  }
-
-  return (
-    <div>
-      <ReactTagify 
-        tagStyle={tagStyle}
-        mentionStyle={mentionStyle}
-        tagClicked={(tag) => alert(tag)}
-        >
-        <p>
-          “You might not think that #programmers are #artists,
-          but programming is an extremely creative #profession.
-          Its logic-based creativity”
-          @JohnRomero
-        </p>
-      </ReactTagify>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+<Tagify
+  onClick={(type, value) => console.log(type, value)}
+  tagStyle={{ fontWeight: 'bold' }}
+  mentionStyle={{ fontStyle: 'italic' }}
+  detectHashtags
+  detectMentions
+>
+  <p>
+    This is an example of a #hashtag and a @mention inside a Tagify component.
+  </p>
+</ReactTagify>
 ```
 
-### Props/Options
+## Props
 
-| Name | Type| Default | Description |
-| --- | --- | --- | --- |
-| tagClicked | PropTypes.func | null | Trigger a function and Its Return You The Tag Clicked |
-| colors  | PropTypes.string | '#0073e6' (Navy Blue) | Custom Color on Tags |
-| tagStyle  | PropTypes.object | undefined | Custom style for tags |
-| linkStyle  | PropTypes.object | undefined | Custom style for links |
-| mentionStyle  | PropTypes.object | undefined | Custom style for mentions |
-| detectHashtags  | PropTypes.bool | true | detecting Hashtags enabled |
-| detectMentions  | PropTypes.bool | true | detecting Mentions enabled |
+| Prop           | Type     | Default | Description                                                       |
+|----------------|----------|---------|-------------------------------------------------------------------|
+| children       | ReactNode |   -     | The content to be processed for tags and mentions.                |
+| colors         | string   | '#0073e6' | The color of the tags and mentions.                               |
+| onClick        | function |   -     | A callback function that is called when a tag or mention is clicked. Receives the clicked element as an argument. |
+| tagStyle       | object   |   -     | The CSS style object for hashtag styling.                         |
+| mentionStyle   | object   |   -     | The CSS style object for mention styling.                         |
+| detectHashtags | boolean  |  true   | Enable or disable the detection of hashtags.                      |
+| detectMentions | boolean  |  true   | Enable or disable the detection of mentions.                      |
+
+
+## Contributing
+Please feel free to contribute by submitting a pull request or reporting any issues you encounter while using this component.
+
+## License
+React Tagify is licensed under the MIT License.
