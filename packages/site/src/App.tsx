@@ -149,7 +149,7 @@ function App() {
       displayName: "Michael",
       avatarUrl: "https://api.dicebear.com/6.x/pixel-art/svg?seed=Michael",
       content:
-        "As @steve_jobs says, this is a #React component with help of #ReactTagify!",
+        "As @amh_jd says, this is a #React component with help of #ReactTagify!",
       timestamp: "10 minutes ago",
     },
     {
@@ -157,7 +157,7 @@ function App() {
       displayName: "Sofia",
       avatarUrl: "https://api.dicebear.com/6.x/pixel-art/svg?seed=Sofia",
       content:
-        "React tagify was the best #product I've ever used. I'm so happy with it! @wladimir_putin",
+        "React tagify was the best #product I've ever used. I'm so happy with it! @ehsan_emp",
       timestamp: "10 minutes ago",
     },
   ];
