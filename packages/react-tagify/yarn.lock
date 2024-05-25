@@ -2547,18 +2547,6 @@ vite-plugin-dts@^0.9.9:
     fs-extra "^10.0.0"
     ts-morph "^13.0.0"
 
-vite@^2.7.13:
-  version "2.9.15"
-  resolved "https://registry.npmjs.org/vite/-/vite-2.9.15.tgz"
-  integrity sha512-fzMt2jK4vQ3yK56te3Kqpkaeq9DkcZfBbzHwYpobasvgYmP2SoAr6Aic05CsB4CzCZbsDv4sujX3pkEGhLabVQ==
-  dependencies:
-    esbuild "^0.14.27"
-    postcss "^8.4.13"
-    resolve "^1.22.0"
-    rollup ">=2.59.0 <2.78.0"
-  optionalDependencies:
-    fsevents "~2.3.2"
-
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz"
